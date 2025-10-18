@@ -17,9 +17,9 @@ if (file_exists($controllerFile)) {
     if (method_exists($controller, $method)) {
         call_user_func_array([$controller, $method], $params);
     } else {
-        echo "⚠️ Method '$method' tidak ditemukan di $controllerName.";
+        echo "Method '$method' tidak ditemukan di $controllerName.";
     }
 } else {
-    echo "⚠️ Controller '$controllerName' tidak ditemukan.";
+    echo "Controller '$controllerName' tidak ditemukan.";
 }
 ?>
