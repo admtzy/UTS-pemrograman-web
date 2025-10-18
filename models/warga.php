@@ -22,7 +22,6 @@ class Warga extends Database {
     $stmt->execute();
     $stmt->close();
   }
-
   public function semua() {
     $conn = $this->getConn();
     $result = $conn->query("SELECT * FROM warga ORDER BY id DESC");
